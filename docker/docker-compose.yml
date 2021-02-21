@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_volume:/data/db
+  kuberfriend:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    image: kuberfriend:tag
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongo
+  kfservice:
+    build:
+      context: ../kuberfriend-service
+      dockerfile: ./Dockerfile
+    image: kfservice:tag
+    ports:
+      - "8082:8082"
+    depends_on:
+      - mongo
+volumes:
+  mongo_volume:
