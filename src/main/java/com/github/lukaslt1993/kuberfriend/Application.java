@@ -1,4 +1,4 @@
-package uk.co.zenitech.lukasj.kuberfriend;
+package com.github.lukaslt1993.kuberfriend;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -8,8 +8,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 
-import uk.co.zenitech.lukasj.kuberfriend.server.repository.Book;
-import uk.co.zenitech.lukasj.kuberfriend.server.repository.BookRepository;
+import com.github.lukaslt1993.kuberfriend.server.repository.Book;
+import com.github.lukaslt1993.kuberfriend.server.repository.BookRepository;
 
 import java.io.InputStream;
 import java.util.ArrayList;

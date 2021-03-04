@@ -1,7 +1,7 @@
 ## About
 A playground to explore kubernetes. Project consists of:
 
-- base application made with Vaadin and Spring Boot. It's called kuberfriend in pom.xml. Runs on 8081 port.
+- kuberfriend - base application made with Vaadin and Spring Boot. Runs on 8081 port.
 - kuberfriend-service - the "brains" of kuberfriend. Made with Spring Boot, runs on 8082 port.
 - MongoDB - used by both applications, runs on 27017 port.
 

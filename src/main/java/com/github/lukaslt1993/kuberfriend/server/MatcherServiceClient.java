@@ -1,4 +1,4 @@
-package uk.co.zenitech.lukasj.kuberfriend.server;
+package com.github.lukaslt1993.kuberfriend.server;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

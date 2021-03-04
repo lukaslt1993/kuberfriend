@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>uk.co.zenitech.lukasj</groupId>
+    <groupId>com.github.lukaslt1993</groupId>
     <artifactId>kuberfriend</artifactId>
     <version>1.0-SNAPSHOT</version>
 

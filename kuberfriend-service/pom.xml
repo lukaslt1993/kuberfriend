@@ -8,7 +8,7 @@
         <version>2.4.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>uk.co.zenitech.lukasj</groupId>
+    <groupId>com.github.lukaslt1993</groupId>
     <artifactId>kuberfriend-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>kuberfriend-service</name>

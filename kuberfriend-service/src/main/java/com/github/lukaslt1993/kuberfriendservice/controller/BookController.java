@@ -1,10 +1,10 @@
-package uk.co.zenitech.lukasj.kuberfriendservice.controller;
+package com.github.lukaslt1993.kuberfriendservice.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import uk.co.zenitech.lukasj.kuberfriendservice.repository.Book;
-import uk.co.zenitech.lukasj.kuberfriendservice.repository.BookRepository;
+import com.github.lukaslt1993.kuberfriendservice.repository.Book;
+import com.github.lukaslt1993.kuberfriendservice.repository.BookRepository;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,5 +1,6 @@
-package uk.co.zenitech.lukasj.kuberfriend.client;
+package com.github.lukaslt1993.kuberfriend.client;
 
+import com.github.lukaslt1993.kuberfriend.Application;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -7,8 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.splitlayout.SplitLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
-import uk.co.zenitech.lukasj.kuberfriend.Application;
-import uk.co.zenitech.lukasj.kuberfriend.server.MatcherServiceClient;
+import com.github.lukaslt1993.kuberfriend.server.MatcherServiceClient;
 
 @Route("")
 public class MainView extends SplitLayout {

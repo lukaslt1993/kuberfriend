@@ -1,4 +1,4 @@
-package uk.co.zenitech.lukasj.kuberfriendservice.repository;
+package com.github.lukaslt1993.kuberfriendservice.repository;
 
 import org.springframework.data.annotation.Id;
 
