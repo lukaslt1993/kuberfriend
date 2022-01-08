@@ -8,8 +8,8 @@ services:
       - mongo_volume:/data/db
   kuberfriend:
     build:
-      context: ../
-      dockerfile: ./docker/Dockerfile
+      context: ../kuberfriend-app
+      dockerfile: ./Dockerfile
     image: kuberfriend:tag
     ports:
       - "8081:8081"
@@ -17,7 +17,7 @@ services:
       - mongo
   kfservice:
     build:
-      context: ../kuberfriend-service
+      context: ../kuberfriend-processor
       dockerfile: ./Dockerfile
     image: kfservice:tag
     ports:
