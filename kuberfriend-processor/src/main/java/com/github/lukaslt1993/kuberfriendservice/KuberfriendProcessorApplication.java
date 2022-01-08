@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KuberfriendServiceApplication {
+public class KuberfriendProcessorApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KuberfriendServiceApplication.class, args);
+        SpringApplication.run(KuberfriendProcessorApplication.class, args);
     }
 
 }

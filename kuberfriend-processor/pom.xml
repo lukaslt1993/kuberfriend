@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.github.lukaslt1993</groupId>
-    <artifactId>kuberfriend-service</artifactId>
+    <artifactId>kuberfriend-processor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>kuberfriend-service</name>
-    <description>Does all the hard work for kuberfriend</description>
+    <name>kuberfriend-processor</name>
+    <description>Does all the hard work for kuberfriend-app</description>
     <properties>
         <java.version>11</java.version>
     </properties>

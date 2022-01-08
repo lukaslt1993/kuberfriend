@@ -13,7 +13,7 @@ public class MatcherServiceClient {
     private String url;
 
     @Autowired
-    public void setUrl(@Value("${kuberfriend.service.address}") String url) {
+    public void setUrl(@Value("${kuberfriend.processor.address}") String url) {
         this.url = url;
     }
 

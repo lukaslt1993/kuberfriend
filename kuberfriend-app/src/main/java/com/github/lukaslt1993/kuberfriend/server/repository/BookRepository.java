@@ -8,4 +8,6 @@ public interface BookRepository extends MongoRepository<Book, String> {
 
     List<Book> findBooksByTitle(String title);
 
+    List<TitleProjection> findTitlesBy();
+
 }

@@ -6,20 +6,20 @@ services:
       - "27017:27017"
     volumes:
       - mongo_volume:/data/db
-  kuberfriend:
+  kuberfriend-app:
     build:
       context: ../kuberfriend-app
       dockerfile: ./Dockerfile
-    image: kuberfriend:tag
+    image: kuberfriend-app:tag
     ports:
       - "8081:8081"
     depends_on:
       - mongo
-  kfservice:
+  kuberfriend-processor:
     build:
       context: ../kuberfriend-processor
       dockerfile: ./Dockerfile
-    image: kfservice:tag
+    image: kuberfriend-processor:tag
     ports:
       - "8082:8082"
     depends_on:

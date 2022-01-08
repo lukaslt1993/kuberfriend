@@ -1,7 +1,6 @@
 package com.github.lukaslt1993.kuberfriend.server.repository;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 
 import java.util.List;
 
@@ -12,7 +11,6 @@ public class Book {
 
     private String title;
 
-    @DBRef(lazy = true)
     private List<String> sentences;
 
     public Book(String title, List<String> sentences) {

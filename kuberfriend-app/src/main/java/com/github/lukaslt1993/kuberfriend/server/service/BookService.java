@@ -2,6 +2,7 @@ package com.github.lukaslt1993.kuberfriend.server.service;
 
 import com.github.lukaslt1993.kuberfriend.server.repository.Book;
 import com.github.lukaslt1993.kuberfriend.server.repository.BookRepository;
+import com.github.lukaslt1993.kuberfriend.server.repository.TitleProjection;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
@@ -25,7 +26,9 @@ public class BookService {
     }
 
     public List<String> getBookTitles() {
-        return bookRepository.findAll().stream().map(Book::getTitle).collect(Collectors.toList());
+        return bookRepository.findTitlesBy().stream()
+                .map(TitleProjection::getTitle)
+                .collect(Collectors.toList());
     }
 
     public void loadBooksIntoDB() throws Exception {

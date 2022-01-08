@@ -6,15 +6,14 @@ metadata:
     kompose.version: 1.21.0 (992df58d8)
   creationTimestamp: null
   labels:
-    io.kompose.service: kuberfriend
-  name: kuberfriend
+    io.kompose.service: kuberfriend-processor
+  name: kuberfriend-processor
 spec:
-  type: LoadBalancer
   ports:
-  - name: "8081"
-    port: 8081
-    targetPort: 8081
+  - name: "8082"
+    port: 8082
+    targetPort: 8082
   selector:
-    io.kompose.service: kuberfriend
+    io.kompose.service: kuberfriend-processor
 status:
   loadBalancer: {}
