@@ -1,26 +1,22 @@
-package com.github.lukaslt1993.kuberfriendservice.controller;
+package com.github.lukaslt1993.kuberfriendprocessor.service;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import com.github.lukaslt1993.kuberfriendservice.repository.Book;
-import com.github.lukaslt1993.kuberfriendservice.repository.BookRepository;
+import com.github.lukaslt1993.kuberfriendprocessor.repository.Book;
+import com.github.lukaslt1993.kuberfriendprocessor.repository.BookRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@RestController
-@RequestMapping("/v1")
-public class BookController {
+@Service
+public class BookService {
 
     private final BookRepository repo;
 
-    public BookController(BookRepository repo) {
+    public BookService(BookRepository repo) {
         this.repo = repo;
     }
 
-    @GetMapping
     public String getMatch(String input, String bookTitle) {
         Book book = repo.findFirstByTitle(bookTitle);
         List<String> matches = new ArrayList<>();

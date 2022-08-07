@@ -1,4 +1,4 @@
-package com.github.lukaslt1993.kuberfriendservice;
+package com.github.lukaslt1993.kuberfriendprocessor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

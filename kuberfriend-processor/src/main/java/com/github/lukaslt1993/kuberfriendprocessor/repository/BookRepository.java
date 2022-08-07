@@ -1,8 +1,7 @@
-package com.github.lukaslt1993.kuberfriendservice.repository;
+package com.github.lukaslt1993.kuberfriendprocessor.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface BookRepository extends MongoRepository<Book, String> {
-
-    public Book findFirstByTitle(String title);
+    Book findFirstByTitle(String title);
 }
